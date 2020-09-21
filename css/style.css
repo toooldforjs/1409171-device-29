@@ -1,0 +1,235 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy"),
+  url("/fonts/gilroylight.woff2") format("woff2"),
+  url("/fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Gilroy"),
+  url("/fonts/gilroyextrabold.woff2") format("woff2"),
+  url("/fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+  url("/fonts/opensanslight.woff2") format("woff2"),
+  url("/fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+  url("/fonts/opensans.woff2") format("woff2"),
+  url("/fonts/opensans.woff") format("woff");
+}
+
+/* Variables */
+
+:root {
+  --white: #FFFFFF;
+  --dusty: #e5e5e5;
+  --light-gray: #7e7e7e;
+  --mid-gray: #464646;
+  --dark-gray: #363636;
+  --black: #000000;
+  --kiwi: #91c92f;
+  --peach: #f7e296;
+  --orange: #f0c52e;
+  --pinky: #f6dada;
+}
+
+/* Global */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: normal;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text and BG styling */
+
+.link-styling,
+.button-styling {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.link-styling:active {
+  opacity: 0.3;
+}
+.button-styling:active {
+  color: var(--peach);
+  background-color: var(--black);
+}
+
+.slider-description,
+.footer-adress,
+.footer-phone {
+  line-height: 20px;
+}
+
+.header-search {
+  line-height: 20px;
+  opacity: 0.3;
+}
+.header-search:hover {
+  opacity: 0.6;
+}
+.header-search:focus {
+  opacity: 1;
+}
+
+.header-service-buttons li {
+  line-height: 20px;
+}
+.header-service-buttons li:hover {
+  opacity: 0.6;
+}
+.header-service-buttons li:active {
+  opacity: 0.3;
+}
+
+.footer-service-buttons li {
+  line-height: 20px;
+  opacity: 0.7;
+}
+.footer-service-buttons li:hover {
+  opacity: 1;
+}
+.footer-service-buttons li:active {
+  opacity: 0.3;
+}
+
+.main-nav-item,
+.footer-menu {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-nav-item a:hover,
+.footer-menu li:hover {
+  opacity: 0.6;
+}
+.main-nav-item a:active,
+.footer-menu li:active {
+  opacity: 0.3;
+}
+
+.dropdown-button {
+  letter-spacing: 0.1em;
+}
+
+.dropdown-menu li{
+  text-transform: none;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+
+.slider-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.feature-value {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}
+
+.feature-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.categories-list {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.categories-list-item:active {
+  opacity: 0.3;
+}
+
+.service-discription h3,
+.about h2, .contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.service-discription p {
+  letter-spacing: 0.1em;
+}
+
+.delivery-channels {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main-header {
+  background-color: var(--peach);
+}
+
+.services {
+  background-color: var(--dusty);
+}
+
+.main-footer,
+.main-footer a {
+  color: var(--white);
+  background-color: var(--dark-gray);
+}

@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
+<body class="page-body">
+  <header class="main-header">
     <div class="logo-conteiner">
       <a href=""><img src="https://via.placeholder.com/163x34" alt="Логотип интернет-магазина Device"></a>
     </div>
     <div class="header-controls">
       <input class="header-search" type="search" placeholder="Поиск по сайту">
-      <ul class="service-buttons">
+      <ul class="header-service-buttons">
         <li><a class="header-login" href="">Войти</a></li>
         <li><a class="header-compare" href="">Сравнить</a></li>
         <li><a class="header-cart" href="">Корзина</a></li>
       </ul>
     </div>
-    <nav class="main-navigation">
-      <ul>
-        <li>
+    <nav>
+      <ul class="main-navigation">
+        <li class="main-nav-item">
           <a href="catalog.html" class="dropdown-button">Каталог товаров</a>
           <ul class="dropdown-menu">
             <li><a href="">Виртуальная реальность</a></li>
@@ -32,9 +34,9 @@
             <li><a href="">Квадрокоптер</a></li>
           </ul>
         </li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+        <li class="main-nav-item"><a href="">Доставка</a></li>
+        <li class="main-nav-item"><a href="">Гарантия</a></li>
+        <li class="main-nav-item"><a href="">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -107,37 +109,37 @@
     </section>
     <section>
       <ul class="categories-list">
-        <li>
-          <a href=""><img src="https://via.placeholder.com/160x160" alt="" width="160" height="160"></a>
+        <li class="categories-list-item">
+          <a href=""><img class="categories-list-img" src="https://via.placeholder.com/160x160" alt="" width="160" height="160"></a>
           <span>Виртуальная реальность</span>
         </li>
-        <li>
-          <a href="catalog.html"><img src="https://via.placeholder.com/160x160" alt=""></a>
+        <li class="categories-list-item">
+          <a href=""><img class="categories-list-img" src="https://via.placeholder.com/160x160" alt="" width="160" height="160"></a>
           <span>Моноподы для селфи</span>
         </li>
-        <li>
-          <a href=""><img src="https://via.placeholder.com/160x160" alt=""></a>
+        <li class="categories-list-item">
+          <a href=""><img class="categories-list-img" src="https://via.placeholder.com/160x160" alt="" width="160" height="160"></a>
           <span>Экшн-камеры</span>
         </li>
-        <li>
-          <a href=""><img src="https://via.placeholder.com/160x160" alt=""></a>
+        <li class="categories-list-item">
+          <a href=""><img class="categories-list-img" src="https://via.placeholder.com/160x160" alt="" width="160" height="160"></a>
           <span>Фитнес-браслеты</span>
         </li>
-        <li>
-          <a href=""><img src="https://via.placeholder.com/160x160" alt=""></a>
+        <li class="categories-list-item">
+          <a href=""><img class="categories-list-img" src="https://via.placeholder.com/160x160" alt="" width="160" height="160"></a>
           <span>Умные часы</span>
         </li>
-        <li>
-          <a href=""><img src="https://via.placeholder.com/160x160" alt=""></a>
+        <li class="categories-list-item">
+          <a href=""><img class="categories-list-img" src="https://via.placeholder.com/160x160" alt="" width="160" height="160"></a>
           <span>Квадрокоптеры</span>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="services">
       <div class="service-titles">
-        <button type="button" class="delivery-button">Доставка</button>
-        <button type="button" class="warranty-button">Гарантия</button>
-        <button type="button" class="credit-button">Кредит</button>
+        <button type="button" class="button-styling delivery-button">Доставка</button>
+        <button type="button" class="button-styling warranty-button">Гарантия</button>
+        <button type="button" class="button-styling credit-button">Кредит</button>
       </div>
       <div class="service-discription">
         <div>
@@ -170,7 +172,7 @@
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
+        <ul class="delivery-channels">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
@@ -181,14 +183,14 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="" class="map"><img src="https://via.placeholder.com/560x222" alt="Карта расположения магазина"></a>
-        <a href="" class="contact-form">Напишите нам</a>
+        <a href="" class="link-styling contact-form">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="footer-top">
       <a href=""><img src="https://via.placeholder.com/27x34" alt="Логотип интернет-магазина Device"></a>
-      <ul class="service-buttons">
+      <ul class="footer-service-buttons">
         <li><a href="" class="footer-login">Войти</a></li>
         <li><a href="" class="footer-compare">Сравнить</a></li>
         <li><a href="" class="footer-cart">Корзина</a></li>
