@@ -4,36 +4,28 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: normal;
-  src: local("Gilroy"),
-  url("/fonts/gilroylight.woff2") format("woff2"),
-  url("/fonts/gilroylight.woff") format("woff");
+  src: local("Gilroy"), url("/fonts/gilroylight.woff2") format("woff2"), url("/fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: bold;
-  src: local("Gilroy"),
-  url("/fonts/gilroyextrabold.woff2") format("woff2"),
-  url("/fonts/gilroyextrabold.woff") format("woff");
+  src: local("Gilroy"), url("/fonts/gilroyextrabold.woff2") format("woff2"), url("/fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: normal;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'),
-  url("/fonts/opensanslight.woff2") format("woff2"),
-  url("/fonts/opensanslight.woff") format("woff");
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("/fonts/opensanslight.woff2") format("woff2"), url("/fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'),
-  url("/fonts/opensans.woff2") format("woff2"),
-  url("/fonts/opensans.woff") format("woff");
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url("/fonts/opensans.woff2") format("woff2"), url("/fonts/opensans.woff") format("woff");
 }
 
 /* Variables */
@@ -41,6 +33,9 @@
 :root {
   --white: #FFFFFF;
   --dusty: #e5e5e5;
+  --low-gray: #EBEBEB;
+  --high-gray: #D9D9D9;
+  --gay-gray: #DCDCDC;
   --light-gray: #7e7e7e;
   --mid-gray: #464646;
   --dark-gray: #363636;
@@ -83,8 +78,7 @@ img {
 
 /* Text and BG styling */
 
-.link-styling,
-.button-styling {
+.link-styling, .button-styling {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -92,17 +86,17 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
 .link-styling:active {
   opacity: 0.3;
 }
+
 .button-styling:active {
   color: var(--peach);
   background-color: var(--black);
 }
 
-.slider-description,
-.footer-adress,
-.footer-phone {
+.slider-description, .footer-adress, .footer-phone {
   line-height: 20px;
 }
 
@@ -110,9 +104,11 @@ img {
   line-height: 20px;
   opacity: 0.3;
 }
+
 .header-search:hover {
   opacity: 0.6;
 }
+
 .header-search:focus {
   opacity: 1;
 }
@@ -120,9 +116,11 @@ img {
 .header-service-buttons li {
   line-height: 20px;
 }
+
 .header-service-buttons li:hover {
   opacity: 0.6;
 }
+
 .header-service-buttons li:active {
   opacity: 0.3;
 }
@@ -131,15 +129,16 @@ img {
   line-height: 20px;
   opacity: 0.7;
 }
+
 .footer-service-buttons li:hover {
   opacity: 1;
 }
+
 .footer-service-buttons li:active {
   opacity: 0.3;
 }
 
-.main-nav-item,
-.footer-menu {
+.main-nav-item, .footer-menu {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
@@ -148,12 +147,11 @@ img {
   text-transform: uppercase;
 }
 
-.main-nav-item a:hover,
-.footer-menu li:hover {
+.main-nav-item a:hover, .footer-menu li:hover {
   opacity: 0.6;
 }
-.main-nav-item a:active,
-.footer-menu li:active {
+
+.main-nav-item a:active, .footer-menu li:active {
   opacity: 0.3;
 }
 
@@ -161,7 +159,7 @@ img {
   letter-spacing: 0.1em;
 }
 
-.dropdown-menu li{
+.dropdown-menu li {
   text-transform: none;
   font-size: 15px;
   line-height: 20px;
@@ -169,7 +167,21 @@ img {
   font-weight: normal;
 }
 
-.slider-title {
+.breadcrumbs a, .breadcrumbs span {
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.slider-title, .main-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
@@ -201,8 +213,7 @@ img {
   opacity: 0.3;
 }
 
-.service-discription h3,
-.about h2, .contacts h2 {
+.service-discription h3, .about h2, .contacts h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
@@ -220,6 +231,113 @@ img {
   font-size: 16px;
 }
 
+.catalog-filters h2, .main-catalog h2, .pagination {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.catalog-filters, .sorting {
+  background-color: var(--dusty);
+}
+
+.catalog-filters h2 {
+  background-color: var(--gay-gray);
+}
+
+.sorting-control {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.sorting-active {
+  opacity: 1;
+}
+
+.sorting-inactive {
+  opacity: 0.3;
+}
+
+.sorting-inactive:hover {
+  opacity: 0.6;
+}
+
+.sorting-inactive:active {
+  opacity: 1;
+}
+
+.filters legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.add-to-cart-button:hover {
+  background-color: var(--orange);
+}
+
+.add-to-cart-button:active {
+  background-color: var(--orange);
+  opacity: 0.3;
+}
+
+.add-to-compare-button {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.add-to-compare-button:hover {
+  opacity: 1;
+}
+
+.add-to-compare-button:active {
+  opacity: 0.2;
+}
+
+.catalog-item-name {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.catalog-item-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.page-numbers a {
+  opacity: 0.3;
+}
+
+.page-numbers a:hover {
+  opacity: 0.6;
+}
+
+.page-numbers a:active {
+  opacity: 1;
+}
+
+.pagination-button:hover {
+  background-color: var(--high-gray);
+}
+
+.pagination-button:active {
+  opacity: 0.3;
+  background-color: var(--high-gray);
+}
+
 .main-header {
   background-color: var(--peach);
 }
@@ -228,8 +346,11 @@ img {
   background-color: var(--dusty);
 }
 
-.main-footer,
-.main-footer a {
+.pagination {
+  background-color: var(--low-gray);
+}
+
+.main-footer, .main-footer a {
   color: var(--white);
   background-color: var(--dark-gray);
 }
