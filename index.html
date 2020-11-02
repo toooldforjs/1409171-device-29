@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page-body">
+<body>
 	<header class="main-header">
 		<div class="header-container">
 			<div class="logo-conteiner">
@@ -56,6 +56,7 @@
 	<main>
 		<h1 class="visually-hidden">Интернет-магазин Device</h1>
 		<section class="main-slider">
+			<h2 class="visually-hidden">Горячие предложения</h2>
 			<ul class="slider-list">
 				<li class="slide first-slide current-slide">
 					<div class="slider-image">
@@ -138,27 +139,28 @@
 						</ul>
 					</div>
 				</li>
-				<ul class="slider-marker-group list-unstyled">
-					<li>
-						<button type="button" class="slider-marker slider-marker-checked"></button>
-					</li>
-					<li>
-						<button type="button" class="slider-marker"></button>
-					</li>
-					<li>
-						<button type="button" class="slider-marker"></button>
-					</li>
-				</ul>
+			</ul>
+			<ul class="slider-marker-group list-unstyled">
+				<li>
+					<button type="button" class="slider-marker slider-marker-checked"></button>
+				</li>
+				<li>
+					<button type="button" class="slider-marker"></button>
+				</li>
+				<li>
+					<button type="button" class="slider-marker"></button>
+				</li>
 			</ul>
 		</section>
 		<section class="categories">
+			<h2 class="visually-hidden">Категории товаров</h2>
 			<ul class="categories-list list-unstyled">
 				<li class="categories-list-item">
 					<a href=""><img class="categories-list-img" src="img/vr-helmet.svg" width="97" height="55" alt="Категория товаров - виртуальная реальность" /></a>
 					<span>Виртуальная реальность</span>
 				</li>
 				<li class="categories-list-item">
-					<a href=""><img class="categories-list-img" src="img/monopod.svg" width="86" height="117" alt="Категория товаров - моноподы для селфи" /></a>
+					<a href="catalog.html"><img class="categories-list-img" src="img/monopod.svg" width="86" height="117" alt="Категория товаров - моноподы для селфи" /></a>
 					<span>Моноподы <br />
 						для селфи</span>
 				</li>
@@ -181,6 +183,7 @@
 			</ul>
 		</section>
 		<section class="services">
+			<h2 class="visually-hidden">Услуги магазина</h2>
 			<div class="services-wrapper">
 				<div class="service-titles">
 					<button type="button" class="button-styling delivery-button active-button">
@@ -221,6 +224,7 @@
 			</div>
 		</section>
 		<section class="brands">
+			<h2 class="visually-hidden">Брэнды товаров</h2>
 			<ul class="brands-list list-unstyled">
 				<li class="brands-dji">
 					<a href="">
@@ -245,9 +249,10 @@
 			</ul>
 		</section>
 		<section class="info">
+			<h2 class="visually-hidden">Информация и контакты</h2>
 			<div class="info-wrapper">
 				<div class="about">
-					<h2>О нас</h2>
+					<h3>О нас</h3>
 					<p>
 						Огромный выбор гаджетов не оставит равнодушным гика, <br />
 						который есть в каждом из нас.
@@ -264,7 +269,7 @@
 					<a class="link-styling about-us-link" href="">Подробнее о нас</a>
 				</div>
 				<div class="contacts">
-					<h2>Контакты</h2>
+					<h3>Контакты</h3>
 					<p>
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы
 						сможете проверить работоспособность покупки. Всякое бывает.
@@ -335,7 +340,7 @@
 			</div>
 			<div class="contact-user-mail-wrapper">
 				<label for="user-mail">Ваш e-mail:</label>
-				<input class="contact-user-mail" id="user-mail" type="email" name="email" placeholder="email@example.com"/>
+				<input class="contact-user-mail" id="user-mail" type="email" name="email" placeholder="email@example.com" />
 			</div>
 			<div class="contact-letter-text-wrapper">
 				<label for="letter-text">Текст письма:</label>
