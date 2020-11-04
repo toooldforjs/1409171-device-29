@@ -107,7 +107,7 @@ img {
 }
 
 .slider-description,
-.footer-adress,
+.footer-address,
 .footer-phone {
 	line-height: 20px;
 }
@@ -132,7 +132,7 @@ img {
 	opacity: 0.3;
 }
 
-.service-discription h3,
+.service-description h3,
 .about h3,
 .contacts h3 {
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -198,7 +198,7 @@ img {
 	height: 50px;
 }
 
-.logo-conteiner a {
+.logo-container a {
 	display: block;
 	position: relative;
 	top: -20px;
@@ -206,11 +206,11 @@ img {
 	height: 35px;
 }
 
-.logo-conteiner a:hover {
+.logo-container a:hover {
 	opacity: 0.6;
 }
 
-.logo-conteiner a:active {
+.logo-container a:active {
 	opacity: 0.3;
 }
 
@@ -766,12 +766,12 @@ img {
 	background-color: var(--black);
 }
 
-.service-discription {
+.service-description {
 	list-style: none;
 	margin: 0;
 }
 
-.service-discription-card {
+.service-description-card {
 	position: relative;
 	margin-top: 86px;
 	padding-left: 76px;
@@ -782,12 +782,12 @@ img {
 	display: block;
 }
 
-.service-discription-card p,
-.service-discription-card h3 {
+.service-description-card p,
+.service-description-card h3 {
 	width: 570px;
 }
 
-.service-discription-card p {
+.service-description-card p {
 	margin-top: -5px;
 	line-height: 30px;
 	letter-spacing: 0.1em;
@@ -1754,7 +1754,7 @@ img {
 	margin-bottom: 67px;
 }
 
-.footer-adress {
+.footer-address {
 	width: 335px;
 	margin: 0;
 }
@@ -1945,13 +1945,13 @@ img {
 	color: var(--dark-gray);
 }
 
-input:invalid,
-input:invalid:focus {
+.modal-contact input:invalid,
+.modal-contact input:invalid:focus {
 	background-color: var(--pinky);
 	color: var(--black-04);
 }
 
-input:invalid:hover {
+.modal-contact input:invalid:hover {
 	background-color: var(--pinky);
 	color: var(--black-04);
 }
