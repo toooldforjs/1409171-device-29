@@ -392,6 +392,10 @@ img {
 .main-nav-item:nth-child(3) {
 	margin-left: -7px;
 }
+.main-nav-item:nth-child(4) {
+	text-align: right;
+	margin-right: -4px;
+}
 
 .dropdown-button {
 	padding-right: 35px;
@@ -490,15 +494,15 @@ img {
 	margin-top: 83px;
 }
 
-.first-slide .features-table li:nth-child(2) {
+.first-slide li:nth-of-type(2) {
 	margin-left: -5px;
 }
 
-.first-slide .features-table li:nth-child(3) {
+.first-slide li:nth-of-type(3) {
 	margin-left: -5px;
 }
 
-.third-slide .features-table li:nth-child(2) {
+.third-slide .li:nth-of-type(2) {
 	margin-left: -114px;
 }
 
@@ -682,15 +686,13 @@ img {
 	background-color: var(--orange);
 }
 
-.categories-list-item a:active .categories-list-img {
+.categories-list-link:active .categories-list-img {
 	opacity: 0.3;
 }
 
-.categories-list-item a:active + span {
+.categories-list-link:active+span {
 	opacity: 0.3;
 }
-
-/* Фон неправильно растягивается */
 
 .services {
 	height: 403px;
@@ -885,11 +887,13 @@ img {
 
 .info-wrapper h3 {
 	margin-top: 50px;
+	margin-bottom: 10px;
 }
 
 .about,
 .contacts {
 	position: relative;
+	min-height: 590px;
 }
 
 .about::before,
@@ -939,7 +943,8 @@ img {
 }
 
 .info-wrapper .link-styling {
-	display: block;
+	position: absolute;
+	bottom: 0;
 	width: 260px;
 	height: 40px;
 	display: flex;
@@ -1773,10 +1778,10 @@ img {
 
 .footer-bottom::before {
 	content: "";
-	display: flex;
+	display: block;
 	width: 80px;
 	height: 7px;
-	margin-top: 11px;
+	margin-top: 12px;
 	background-color: var(--new-orange);
 }
 
