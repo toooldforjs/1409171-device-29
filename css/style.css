@@ -202,7 +202,7 @@ img {
 
 .search-form::before {
 	content: "";
-	background-image: url("../img/icon_search.svg");
+	background-image: url("../img/icon-search.svg");
 	position: absolute;
 	width: 16px;
 	height: 16px;
@@ -318,7 +318,7 @@ img {
 
 .header-user-name a::before, .header-login-link a::before {
 	content: "";
-	background-image: url("../img/icon_user.svg");
+	background-image: url("../img/icon-user.svg");
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 13px;
@@ -329,7 +329,7 @@ img {
 
 .header-compare-link a::before {
 	content: "";
-	background-image: url("../img/icon_chart.svg");
+	background-image: url("../img/icon-chart.svg");
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 13px;
@@ -340,7 +340,7 @@ img {
 
 .header-cart-link a::before {
 	content: "";
-	background-image: url("../img/icon_cart.svg");
+	background-image: url("../img/icon-cart.svg");
 	background-repeat: no-repeat;
 	position: absolute;
 	width: 13px;
@@ -379,7 +379,7 @@ img {
 .dropdown-button::after {
 	content: "";
 	position: absolute;
-	background-image: url("../img/icon_cross_header_menu.svg");
+	background-image: url("../img/icon-cross-header-menu.svg");
 	background-repeat: no-repeat;
 	width: 22px;
 	height: 22px;
@@ -953,7 +953,7 @@ img {
 
 .breadcrumbs li:not(:first-child)::before {
 	content: "";
-	background-image: url("../img/icon_arrow_nav.svg");
+	background-image: url("../img/icon-arrow-nav.svg");
 	width: 12px;
 	height: 12px;
 	position: absolute;
@@ -1612,7 +1612,7 @@ img {
 
 .footer-login-link a::before, .footer-user-name a::before {
 	content: "";
-	background-image: url("../img/icon_user-footer.svg");
+	background-image: url("../img/icon-user-footer.svg");
 	width: 13px;
 	height: 14px;
 	position: absolute;
@@ -1627,7 +1627,7 @@ img {
 
 .footer-compare-link a::before {
 	content: "";
-	background-image: url("../img/icon_chart-footer.svg");
+	background-image: url("../img/icon-chart-footer.svg");
 	width: 14px;
 	height: 14px;
 	position: absolute;
@@ -1637,7 +1637,7 @@ img {
 
 .footer-cart-link a::before {
 	content: "";
-	background-image: url("../img/icon_cart-footer.svg");
+	background-image: url("../img/icon-cart-footer.svg");
 	width: 10px;
 	height: 10px;
 	position: absolute;
@@ -1711,15 +1711,15 @@ img {
 }
 
 .icon-facebook a {
-	background-image: url("../img/icon_facebook.svg");
+	background-image: url("../img/icon-facebook.svg");
 }
 
 .icon-instagram a {
-	background-image: url("../img/icon_instagram.svg");
+	background-image: url("../img/icon-instagram.svg");
 }
 
 .icon-twitter a {
-	background-image: url("../img/icon_twitter.svg");
+	background-image: url("../img/icon-twitter.svg");
 }
 
 .footer-social-icons a:hover {
@@ -1777,7 +1777,7 @@ img {
 	cursor: pointer;
 	background-color: var(--orange);
 	opacity: 0.5;
-	background-image: url("../img/modal_cross.svg");
+	background-image: url("../img/modal-cross.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
