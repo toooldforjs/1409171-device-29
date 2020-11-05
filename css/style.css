@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 /* Fonts */
 
 @font-face {
@@ -129,7 +136,8 @@ img {
 	border: 0;
 	padding: 0;
 	white-space: nowrap;
-	clip-path: inset(100%);
+	-webkit-clip-path: inset(100%);
+	        clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -402,10 +410,13 @@ img {
 
 .dropdown-menu {
 	display: none;
+	grid-template-rows: repeat(3, -webkit-min-content);
 	grid-template-rows: repeat(3, min-content);
+	grid-template-columns: repeat(3, -webkit-max-content);
 	grid-template-columns: repeat(3, max-content);
 	grid-auto-flow: column;
-	column-gap: 62px;
+	-moz-column-gap: 62px;
+	     column-gap: 62px;
 	row-gap: 17px;
 	padding: 0;
 	margin: 0;
@@ -588,6 +599,7 @@ img {
 .slider-marker-group {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
 	position: absolute;
 	bottom: 135px;
 	right: 108px;
@@ -597,19 +609,18 @@ img {
 }
 
 .slider-marker {
-	border: 1px solid var(--black);
+	background-image: url("../img/slider-button.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	border: none;
 	width: 12px;
 	height: 12px;
-	background-color: transparent;
-	border-radius: 50%;
 	cursor: pointer;
-	box-sizing: border-box;
 }
 
 .slider-marker-checked {
-	background-image: url("../img/slider-marker-checked.svg");
-	background-repeat: no-repeat;
-	background-position: center;
+	background-image: url("../img/slider-button-active.svg");
 }
 
 .categories-list {
@@ -813,7 +824,8 @@ img {
 	background: var(--light-gray) url("../img/logo-dji.png");
 	width: 260px;
 	height: 100px;
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	opacity: 0.2;
 }
 
@@ -822,7 +834,8 @@ img {
 	background: var(--light-gray) url("../img/logo-sp-gadgets.png");
 	width: 260px;
 	height: 100px;
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	opacity: 0.2;
 }
 
@@ -831,7 +844,8 @@ img {
 	background: var(--light-gray) url("../img/logo-go-pro.png");
 	width: 260px;
 	height: 100px;
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	opacity: 0.2;
 }
 
@@ -840,19 +854,22 @@ img {
 	background: var(--light-gray) url("../img/logo-vive.png");
 	width: 260px;
 	height: 100px;
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	opacity: 0.2;
 }
 
 .brands-list a:hover, .brands-list a:focus {
-	filter: none;
+	-webkit-filter: none;
+	        filter: none;
 	opacity: 1;
 }
 
 .info-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 40px;
+	-moz-column-gap: 40px;
+	     column-gap: 40px;
 	margin-bottom: 76px;
 }
 
@@ -1147,7 +1164,8 @@ img {
 	padding: 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 40px;
+	-moz-column-gap: 40px;
+	     column-gap: 40px;
 	row-gap: 48px;
 }
 
@@ -1162,6 +1180,7 @@ img {
 .catalog-item-props {
 	width: 360px;
 	display: grid;
+	grid-template-columns: 1fr -webkit-max-content;
 	grid-template-columns: 1fr max-content;
 	padding-top: 31px;
 }
@@ -1269,7 +1288,8 @@ img {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	column-gap: 30px;
+	-moz-column-gap: 30px;
+	     column-gap: 30px;
 	padding-left: 9px;
 }
 
@@ -1308,6 +1328,7 @@ img {
 
 .pagination {
 	display: grid;
+	grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
 	grid-template-columns: min-content 1fr min-content;
 	margin-left: 72px;
 	margin-bottom: 78px;
@@ -1462,7 +1483,9 @@ img {
 	position: relative;
 	display: block;
 	cursor: pointer;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: normal;
 	font-size: 14px;
@@ -1577,6 +1600,7 @@ img {
 
 .footer-top {
 	display: grid;
+	grid-template-columns: -webkit-max-content 1fr;
 	grid-template-columns: max-content 1fr;
 	margin-bottom: 32px;
 	padding-top: 40px;
@@ -1681,6 +1705,7 @@ img {
 
 .footer-middle {
 	display: grid;
+	grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
 	grid-template-columns: max-content 1fr max-content;
 	margin-bottom: 67px;
 }
@@ -1775,7 +1800,8 @@ img {
 	background-color: var(--white);
 	background-image: none;
 	box-shadow: 0px 10px 16px var(--black-015);
-	animation: rise 0.3s;
+	-webkit-animation: rise 0.3s;
+	        animation: rise 0.3s;
 }
 
 .hide-modal {
@@ -1783,7 +1809,8 @@ img {
 }
 
 .modal-error {
-	animation: shake 0.5s;
+	-webkit-animation: shake 0.5s;
+	        animation: shake 0.5s;
 }
 
 /* Modal close */
@@ -1832,7 +1859,8 @@ img {
 .contact-form {
 	display: grid;
 	grid-template-columns: 360px 360px;
-	column-gap: 40px;
+	-moz-column-gap: 40px;
+	     column-gap: 40px;
 	margin-top: 92px;
 	margin-left: 100px;
 }
@@ -1933,12 +1961,33 @@ img {
 
 /* Animation */
 
+@-webkit-keyframes rise {
+	0% {
+		transform: translateY(2000px) scale(0);
+	}
+	100% {
+		transform: translateY(0) scale(1);
+	}
+}
+
 @keyframes rise {
 	0% {
 		transform: translateY(2000px) scale(0);
 	}
 	100% {
 		transform: translateY(0) scale(1);
+	}
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
 	}
 }
 

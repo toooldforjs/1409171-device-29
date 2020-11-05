@@ -32,16 +32,6 @@ mapLink.addEventListener("click", function (evt) {
 	}
 });
 
-// contactCloseButton.addEventListener("click", function (evt) {
-// 	evt.preventDefault();
-// 	contactModal.classList.add("hide-modal");
-// });
-
-// mapCloseButton.addEventListener("click", function (evt) {
-// 	evt.preventDefault();
-// 	mapModal.classList.add("hide-modal");
-// });
-
 function fnclose(closebtn, modal) {
 	closebtn.addEventListener("click", function (evt) {
 		evt.preventDefault();
