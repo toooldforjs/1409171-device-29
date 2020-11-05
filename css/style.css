@@ -137,7 +137,7 @@ img {
 	padding: 0;
 	white-space: nowrap;
 	-webkit-clip-path: inset(100%);
-	        clip-path: inset(100%);
+	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -416,7 +416,7 @@ img {
 	grid-template-columns: repeat(3, max-content);
 	grid-auto-flow: column;
 	-moz-column-gap: 62px;
-	     column-gap: 62px;
+	column-gap: 62px;
 	row-gap: 17px;
 	padding: 0;
 	margin: 0;
@@ -825,7 +825,7 @@ img {
 	width: 260px;
 	height: 100px;
 	-webkit-filter: grayscale(100%);
-	        filter: grayscale(100%);
+	filter: grayscale(100%);
 	opacity: 0.2;
 }
 
@@ -835,7 +835,7 @@ img {
 	width: 260px;
 	height: 100px;
 	-webkit-filter: grayscale(100%);
-	        filter: grayscale(100%);
+	filter: grayscale(100%);
 	opacity: 0.2;
 }
 
@@ -845,7 +845,7 @@ img {
 	width: 260px;
 	height: 100px;
 	-webkit-filter: grayscale(100%);
-	        filter: grayscale(100%);
+	filter: grayscale(100%);
 	opacity: 0.2;
 }
 
@@ -855,13 +855,13 @@ img {
 	width: 260px;
 	height: 100px;
 	-webkit-filter: grayscale(100%);
-	        filter: grayscale(100%);
+	filter: grayscale(100%);
 	opacity: 0.2;
 }
 
 .brands-list a:hover, .brands-list a:focus {
 	-webkit-filter: none;
-	        filter: none;
+	filter: none;
 	opacity: 1;
 }
 
@@ -869,7 +869,7 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	-moz-column-gap: 40px;
-	     column-gap: 40px;
+	column-gap: 40px;
 	margin-bottom: 76px;
 }
 
@@ -1165,7 +1165,7 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	-moz-column-gap: 40px;
-	     column-gap: 40px;
+	column-gap: 40px;
 	row-gap: 48px;
 }
 
@@ -1289,7 +1289,7 @@ img {
 	padding: 0;
 	display: flex;
 	-moz-column-gap: 30px;
-	     column-gap: 30px;
+	column-gap: 30px;
 	padding-left: 9px;
 }
 
@@ -1450,6 +1450,15 @@ img {
 	border-radius: 4px;
 }
 
+.price-controls input::-webkit-outer-spin-button, .price-controls input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.price-controls input[type=number] {
+	-moz-appearance: textfield;
+}
+
 .min-price:focus-within input, .max-price:focus-within input {
 	background: var(--e-gray);
 }
@@ -1484,8 +1493,8 @@ img {
 	display: block;
 	cursor: pointer;
 	-webkit-user-select: none;
-	   -moz-user-select: none;
-	        user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: normal;
 	font-size: 14px;
@@ -1801,7 +1810,7 @@ img {
 	background-image: none;
 	box-shadow: 0px 10px 16px var(--black-015);
 	-webkit-animation: rise 0.3s;
-	        animation: rise 0.3s;
+	animation: rise 0.3s;
 }
 
 .hide-modal {
@@ -1810,7 +1819,7 @@ img {
 
 .modal-error {
 	-webkit-animation: shake 0.5s;
-	        animation: shake 0.5s;
+	animation: shake 0.5s;
 }
 
 /* Modal close */
@@ -1860,7 +1869,7 @@ img {
 	display: grid;
 	grid-template-columns: 360px 360px;
 	-moz-column-gap: 40px;
-	     column-gap: 40px;
+	column-gap: 40px;
 	margin-top: 92px;
 	margin-left: 100px;
 }
