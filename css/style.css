@@ -57,6 +57,7 @@
 	--black-03: rgba(0, 0, 0, 0.3);
 	--black-04: rgba(0, 0, 0, 0.4);
 	--black-015: rgba(0, 0, 0, 0.15);
+	--black-018: rgba(0, 0, 0, 0.18);
 	--kiwi: #91c92f;
 	--peach: #f7e296;
 	--orange: #f0c52e;
@@ -1143,9 +1144,10 @@ img {
 
 .sorting-buttons {
 	display: flex;
+	margin: 0;
 	margin-left: auto;
-	padding-right: 3px;
 	padding-top: 30px;
+	padding-right: 3px;
 }
 
 .catalog-main-container {
@@ -1354,34 +1356,24 @@ img {
 	margin-top: 70px;
 }
 
-.price-filters {
+.filter-block {
 	border: none;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 	padding: 0;
-	padding-top: 20px;
-}
-
-.filter-block {
-	position: relative;
 }
 
 .filter-block legend {
-	padding-top: 17px;
-}
-
-.filter-block legend::before {
-	content: "";
-	position: absolute;
-	width: 200px;
-	height: 2px;
-	top: 0;
-	left: 0;
-	background-color: var(--black);
+	width: 100%;
+	height: 40px;
+	border-top: 2px solid var(--black);
+	box-sizing: border-box;
+	padding-top: 15px;
 }
 
 .range-filter {
-	width: 200px;
+	margin-top: 12px;
+	height: 60px;
 }
 
 .range-controls {
@@ -1411,7 +1403,10 @@ img {
 	background-color: var(--t-gray);
 	border-radius: 50%;
 	cursor: pointer;
-	box-shadow: 0px 2px 2px var(--white-02);
+}
+
+.toggle {
+	box-shadow: 0px 2px 2px var(--black-018);
 }
 
 .range-controls .toggle-min {
@@ -1466,26 +1461,22 @@ img {
 /* Catalog filters - checkbox & radio */
 
 .color-filters {
-	border: none;
-	margin: 0;
-	margin-bottom: 38px;
-	padding: 0;
-	padding-top: 20px;
+	margin-bottom: 34px;
 }
 
 .color-filters ul {
 	list-style: none;
 	padding: 0;
-	margin: 0;
-	padding-top: 7px;
+	margin: 21px 0 5px 0;
 }
 
 .filter-option {
+	height: 24px;
 	padding-left: 43px;
 }
 
 .filter-option:not(:last-child) {
-	padding-bottom: 16px;
+	margin-bottom: 15px;
 }
 
 .filter-option label {
@@ -1530,19 +1521,11 @@ img {
 	background-position: 0 0;
 }
 
-.bluetooth-filters {
-	border: none;
-	margin: 0;
-	margin-bottom: 34px;
-	padding: 0;
-	padding-top: 20px;
-}
-
 .bluetooth-filters ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	padding-top: 8px;
+	margin-top: 22px;
 }
 
 .filter-input-radio+label::before {
